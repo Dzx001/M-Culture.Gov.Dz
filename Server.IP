@@ -1,0 +1,191 @@
+NSE: Loaded 132 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:41
+Completed NSE at 16:41, 0.00s elapsed
+Initiating NSE at 16:41
+Completed NSE at 16:41, 0.00s elapsed
+Failed to resolve "80.246.0.14.txt".
+Initiating Parallel DNS resolution of 1 host. at 16:41
+Completed Parallel DNS resolution of 1 host. at 16:41, 0.01s elapsed
+Initiating SYN Stealth Scan at 16:41
+Scanning clserver1.tda.dz (80.246.0.14) [100 ports]
+Discovered open port 110/tcp on 80.246.0.14
+Discovered open port 443/tcp on 80.246.0.14
+Discovered open port 80/tcp on 80.246.0.14
+Discovered open port 143/tcp on 80.246.0.14
+Discovered open port 21/tcp on 80.246.0.14
+Discovered open port 25/tcp on 80.246.0.14
+Discovered open port 8080/tcp on 80.246.0.14
+Discovered open port 5190/tcp on 80.246.0.14
+Completed SYN Stealth Scan at 16:41, 6.16s elapsed (100 total ports)
+Initiating Service scan at 16:41
+Scanning 8 services on clserver1.tda.dz (80.246.0.14)
+
+Nmap scan report for clserver1.tda.dz (80.246.0.14)
+Host is up (0.026s latency).
+Not shown: 92 filtered ports
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      Pure-FTPd
+| ssl-cert: Subject: commonName=clserver1.tda.dz/organizationName=TDA/stateOrProvinceName=ALGERIE/countryName=DZ
+| Issuer: commonName=clserver1.tda.dz/organizationName=TDA/stateOrProvinceName=ALGERIE/countryName=DZ
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-05-02T13:25:48
+| Not valid after:  2032-04-27T13:25:48
+| MD5:   3b0b e66e b51f 2c12 991b 9abc 6528 ebe1
+|_SHA-1: 59bc 6996 f8ae c93b 329b 67d8 adda 911b bce5 9891
+|_ssl-date: TLS randomness does not represent time
+25/tcp   open  smtp     Postfix smtpd
+|_smtp-commands: clserver1.tda.dz, PIPELINING, SIZE, VRFY, ETRN, STARTTLS, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Issuer: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-05-02T14:00:58
+| Not valid after:  2022-04-30T14:00:58
+| MD5:   b951 f989 1d84 7bf1 cbdf 107f 835e ea67
+|_SHA-1: a1d9 ddfa 7c86 1e09 e829 e503 6b84 329a 80e6 3bf9
+80/tcp   open  http     Apache httpd 2.2.22 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+110/tcp  open  pop3     Dovecot pop3d
+|_pop3-capabilities: STLS USER SASL(PLAIN LOGIN) PIPELINING TOP RESP-CODES UIDL CAPA
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Issuer: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-05-02T14:00:58
+| Not valid after:  2022-04-30T14:00:58
+| MD5:   b951 f989 1d84 7bf1 cbdf 107f 835e ea67
+|_SHA-1: a1d9 ddfa 7c86 1e09 e829 e503 6b84 329a 80e6 3bf9
+|_ssl-date: TLS randomness does not represent time
+143/tcp  open  imap     Dovecot imapd
+|_imap-capabilities: IDLE SASL-IR listed STARTTLS ID post-login LOGIN-REFERRALS LITERAL+ capabilities Pre-login AUTH=PLAIN AUTH=LOGINA0001 OK more IMAP4rev1 ENABLE have
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Issuer: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=ALGERIE/countryName=DZ
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-05-02T14:00:58
+| Not valid after:  2022-04-30T14:00:58
+| MD5:   b951 f989 1d84 7bf1 cbdf 107f 835e ea67
+|_SHA-1: a1d9 ddfa 7c86 1e09 e829 e503 6b84 329a 80e6 3bf9
+|_ssl-date: TLS randomness does not represent time
+443/tcp  open  ssl/http Apache httpd 2.2.22 ((Debian))
+|_http-favicon: Unknown favicon MD5: 354A0068E14EC84C6AB904F40DC18E0F
+| http-methods: 
+|_  Supported Methods: GET OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+| http-title: Bitakati | Lancement du service paiement sur internet par cart...
+|_Requested resource was https://clserver1.tda.dz/fr/
+| ssl-cert: Subject: commonName=www.bitakati.dz
+| Issuer: commonName=COMODO RSA Domain Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2016-10-27T00:00:00
+| Not valid after:  2017-10-27T23:59:59
+| MD5:   6850 f26b 0c08 1199 f59b 29a1 7ecb b131
+|_SHA-1: 0fe4 2a1d d78c 7c1e bde1 5d9e d157 f6cc e903 c853
+|_ssl-date: TLS randomness does not represent time
+5190/tcp open  aol?
+8080/tcp open  ssl/http Apache httpd 2.2.22 ((Debian))
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+| ssl-cert: Subject: commonName=*.tda.dz
+| Issuer: commonName=COMODO RSA Domain Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-04-13T00:00:00
+| Not valid after:  2018-04-29T23:59:59
+| MD5:   88f1 3ab3 346b 86d7 30d7 deee 4a5f 4b78
+|_SHA-1: 00e5 5e61 aa2e 39d6 849b 638e 0af4 df43 4748 654f
+|_ssl-date: TLS randomness does not represent time
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|firewall
+Running (JUST GUESSING): Linux 3.X|2.6.X (92%), WatchGuard Fireware 11.X (90%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:watchguard:fireware:11.8 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: Linux 3.1 - 3.2 (92%), Linux 3.2 - 3.8 (90%), Linux 3.8 (90%), WatchGuard Fireware 11.8 (90%), Linux 3.5 (90%), Linux 3.2.0 (89%), Linux 3.0 - 3.2 (87%), Linux 2.6.32 - 2.6.39 (87%), Linux 2.6.18 - 2.6.22 (86%), Linux 2.6.32 - 3.0 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 3.351 days (since Sun Jul  9 08:18:52 2017)
+Network Distance: 6 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  clserver1.tda.dz
+
+TRACEROUTE (using port 110/tcp)
+HOP RTT      ADDRESS
+1   8.20 ms  root*.home (192.168.1.254)
+2   26.95 ms 105.101.0.1
+3   26.45 ms 10.103.116.21
+4   25.82 ms 172.17.116.10
+5   24.61 ms 213.140.58.14
+6   24.44 ms clserver1.tda.dz (80.246.0.14)
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:44
+Completed NSE at 16:44, 0.00s elapsed
+Initiating NSE at 16:44
+Completed NSE at 16:44, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https
+<=================================================================================================================>
+Info About Server
+<=================================================================================================================>   
+   Apache ---------------------------------------------------------------------
+	Website    : http://httpd.apache.org/
+	Version    : 2.2.22 (from HTTP Server Header)
+
+   Country --------------------------------------------------------------------
+	String     : ALGERIA
+	Module     : DZ
+
+   HTTPServer -----------------------------------------------------------------
+	Os         : Debian Linux
+	String     : Apache/2.2.22 (Debian) (from server string)
+
+   IP -------------------------------------------------------------------------
+	String     : 80.246.0.14
+
+   PHP ------------------------------------------------------------------------
+	Version    : 5.5.38-1~dotdeb+7.1
+
+   X-Powered-By ---------------------------------------------------------------
+	String     : PHP/5.5.38-1~dotdeb+7.1 (from x-powered-by string)
+	
+<=================================================================================================================>
+[*] Found  39  Website
+
+http://www.mfdgi.gov.dz/
+http://www.theatretiziouzou.dz/
+http://www.casbahdalger.dz/
+http://www.dgpp-mf.gov.dz/
+http://www.mcmmto.dz/
+http://www.fnje.dz/
+http://www.ecolebeauxartsazazga.dz/
+
+[*] Found  1  Joomla Website
+
+http://www.dgpp-mf.gov.dz/
+
+[*] Found  1  Wordpress Website
+
+https://giemonetique.dz/
+
+ [*] Found admin panel 
+ 
+  http://www.mfdgi.gov.dz/administrator/
+
+
+<===================================================================================================================>
+
+
+
+	
