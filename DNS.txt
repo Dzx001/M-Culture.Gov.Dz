@@ -1,0 +1,80 @@
+; <<>> DiG 9.9.5-3ubuntu0.10-Ubuntu <<>> m-culture.gov.dz AAAA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8914
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;m-culture.gov.dz.		IN	AAAA
+
+;; AUTHORITY SECTION:
+m-culture.gov.dz.	10800	IN	SOA	ns1.tda.dz. root.ns1.tda.dz. 2014032701 21600 10800 604800 86400
+
+;; Query time: 22 msec
+;; SERVER: 192.168.1.254#53(192.168.1.254)
+;; WHEN: Wed Jul 12 04:56:09 CET 2017
+;; MSG SIZE  rcvd: 94
+
+; <<>> DiG 9.9.5-3ubuntu0.10-Ubuntu <<>> m-culture.gov.dz MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8562
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;m-culture.gov.dz.		IN	MX
+
+;; ANSWER SECTION:
+m-culture.gov.dz.	604800	IN	MX	10 clserver1.tda.dz.
+m-culture.gov.dz.	604800	IN	MX	20 clserver2.tda.dz.
+
+;; Query time: 23 msec
+;; SERVER: 192.168.1.254#53(192.168.1.254)
+;; WHEN: Wed Jul 12 04:56:53 CET 2017
+;; MSG SIZE  rcvd: 101
+
+; <<>> DiG 9.9.5-3ubuntu0.10-Ubuntu <<>> m-culture.gov.dz NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7193
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;m-culture.gov.dz.		IN	NS
+
+;; ANSWER SECTION:
+m-culture.gov.dz.	81287	IN	NS	ns2.tda.dz.
+m-culture.gov.dz.	81287	IN	NS	ns1.tda.dz.
+
+;; Query time: 21 msec
+;; SERVER: 192.168.1.254#53(192.168.1.254)
+;; WHEN: Wed Jul 12 04:57:37 CET 2017
+;; MSG SIZE  rcvd: 85
+
+; <<>> DiG 9.9.5-3ubuntu0.10-Ubuntu <<>> tda.dz MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38802
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1280
+;; QUESTION SECTION:
+;tda.dz.				IN	MX
+
+;; ANSWER SECTION:
+tda.dz.			604800	IN	MX	10 mail1.tda.dz.
+tda.dz.			604800	IN	MX	50 mail2.tda.dz.
+
+;; Query time: 22 msec
+;; SERVER: 192.168.1.254#53(192.168.1.254)
+;; WHEN: Wed Jul 12 04:58:55 CET 2017
+;; MSG SIZE  rcvd: 79
+
+
